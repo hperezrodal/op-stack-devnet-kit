@@ -1,0 +1,23 @@
+#!/bin/bash
+
+WORK_DIR=$HOME/geth
+
+CHAIN_ID=77777
+
+## MNEMONIC='test test test test test test test test test test test junk'
+
+## Account 0:
+##   Address: 0x1090495C9bC80106a8E42D89E10fd58adbDA409b
+##   PrivateKey: 0x287cfecc881e96eb57b8ac6ce43437609a9a231e2ef3276149ab91ae7e54b3db
+## Account 1:
+##   Address: 0x1A24e5C53B1438f15B25c819fEe1F894e6D131f2
+##   PrivateKey: 0x44d4c20e2c2aaca3ba8d9363675be1241ec7f40897dae419bb5407fe55d2078b
+## Account 2:
+##   Address: 0xB1C4590F893EE598c661e1c396Db9c3097b983de
+##   PrivateKey: 0xcc9f4c420a2b90b34828044fcccd80d215cfcee739bada5dcc56569452b57271
+## Account 3:
+##   Address: 0xa0A863Aa28aaAbcA8cC2b0eFaD0a6d1CF2ae4807
+##   PrivateKey: 0x7acd4301c15335158f8ce713c323c4b1303f8825fe8d19fec31accd8d1b378a7
+## Account 4:
+##   Address: 0x0aa4d57bFE18dbC285EA2284aba46403Ff4015C2
+##   PrivateKey: 0x12519a253cb5a7c965d54fc263e34ab54642aa4e8dc68b5db069a98e48c2508f

@@ -1,0 +1,30 @@
+services:
+  geth:
+    container_name: geth
+    image: ethereum/client-go:v1.11.6
+    restart: unless-stopped
+    ports:
+      - "8545:8545" #rpc
+      - "8060:6060" #metrics
+      - "30303:30303"
+      - "8546:8546" #ws
+    volumes:
+      - geth-data:/db
+      - "./config/genesis.json:/genesis.json"
+      - "./config/jwt.txt:/config/jwt.txt"
+      - "./config/entrypoint.sh:/entrypoint.sh"
+      - "./data/keystore:/db/keystore"
+      - "./config/password.txt:/db/password.txt"
+    entrypoint:  
+      - "/bin/sh"
+      - "/entrypoint.sh"
+      - "--authrpc.jwtsecret=/config/jwt.txt"
+      - "--http.corsdomain=*"
+      - "--http.vhosts=*"
+    environment:
+      GETH_MINER_RECOMMIT: 100ms
+      CHAIN_ID: 123456
+
+volumes:
+  geth-data:
+
