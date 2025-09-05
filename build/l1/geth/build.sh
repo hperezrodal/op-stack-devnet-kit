@@ -1,8 +1,20 @@
 #!/bin/bash
 
-WORK_DIR=$HOME/geth
+MYHOME=$(pwd)
 
-CHAIN_ID=77777
+WORK_DIR=../../../deployment/l1/geth
+
+rm -rf $WORK_DIR
+mkdir -p $WORK_DIR/config
+
+
+cp ./docker-compose.yml ${WORK_DIR}/docker-compose.yml
+cp -r ./config/* ${WORK_DIR}/config
+
+FILE_PATH="${WORK_DIR}/docker-compose.yml"
+
+sed -i "s|CHAIN_ID: .*|CHAIN_ID: $L1_CHAIN_ID|" ${WORK_DIR}/docker-compose.yml
+sed -i "s|\"chainId\": .*|\"chainId\": $L1_CHAIN_ID,|" "${WORK_DIR}/config/genesis.json"
 
 ## MNEMONIC='test test test test test test test test test test test junk'
 

@@ -4,11 +4,11 @@ set -e
 
 MYHOME=$(pwd)
 
-cd build/blockscout
+cd build/l1/geth
 ./build.sh
 
 cd $MYHOME
 
-echo "Blockscout built successfully"
+echo "L1 Geth built successfully"
 
 

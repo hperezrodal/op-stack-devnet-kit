@@ -18,3 +18,10 @@ It provides a ready-to-use Docker-based setup so developers can:
 - 🐳 Docker-based environment for easy setup and reproducibility
 
 This kit is designed for developers who want to quickly prototype and build on Ethereum’s L1 + L2 stack without needing a complex cloud setup.
+
+
+## Summary
+
+- L1 
+  - RPC: http://devnet.rpc.hperezrodal.io:8545
+  - Explorer: http://devnet.explorer.hperezrodal.io

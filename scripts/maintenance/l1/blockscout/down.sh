@@ -4,7 +4,7 @@ set -e
 
 MYHOME=$(pwd)
 
-TARGET_DIR=$HOME/blockscout
+TARGET_DIR=$DEPLOYMENT_DIR/l1/blockscout
 
 cd $TARGET_DIR/docker-compose
 

@@ -2,8 +2,12 @@
 
 MYHOME=$(pwd)
 
-./scripts/maintenance/geth/up.sh
+./scripts/maintenance/l1/geth/up.sh
 
 sleep 10
 
-./scripts/maintenance/blockscout/up.sh
+./scripts/maintenance/l1/blockscout/up.sh
+
+cd $MYHOME
+
+echo "L1 started successfully"

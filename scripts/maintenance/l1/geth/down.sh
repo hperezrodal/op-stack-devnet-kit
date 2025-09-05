@@ -4,7 +4,7 @@ set -e
 
 MYHOME=$(pwd)
 
-TARGET_DIR=$HOME/geth
+TARGET_DIR=$DEPLOYMENT_DIR/l1/geth
 
 cd $TARGET_DIR
 

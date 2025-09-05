@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RESPONSE=$(curl -s -X POST http://localhost:8545 \
+RESPONSE=$(curl -s -X POST http://$L1_RPC_URL:8545 \
   -H "Content-Type: application/json" \
   --data '{
     "jsonrpc":"2.0",
